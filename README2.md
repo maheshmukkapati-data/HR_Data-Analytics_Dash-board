@@ -1,40 +1,51 @@
+# HR Analytics Dashboard - Power BI Integration
 
-# Detecting Mental Stress and Risk of Suicide Attempts in Students
+This project showcases a comprehensive HR analytics dashboard designed to track and improve employee performance, productivity, and retention. Built using Python for preprocessing and Power BI for interactive visuals.
 
-This project aims to identify students at risk of mental stress and potential suicide attempts using survey response data and machine learning.
+## 📊 Dashboard Goals
+- Visualize employee engagement, satisfaction, and performance trends
+- Identify high attrition risk employees
+- Enable HR teams to make data-driven decisions
 
-## 📌 Objective
-To decrease suicide rates among students by predicting at-risk individuals and providing timely interventions like counseling.
+## 🛠️ Technologies Used
+- Python (Pandas, NumPy)
+- Power BI (for dashboard visualization)
 
-## 💻 Technologies Used
-- Python
-- Pandas, Sklearn, Matplotlib, Seaborn
-- SQL (for pre-processing if applicable)
-- GitHub for version control
+## 📁 Files
+- `hr_analytics_dashboard.py`: Main script to process raw HR data and generate KPIs.
+- `employee_data.csv`: Sample input dataset (can be replaced with real company data).
+- `processed_hr_data.csv`: Cleaned output used in Power BI.
+- `README.md`: Project documentation.
 
-## 🧠 Model
-A Random Forest Classifier is trained to detect high-risk students based on input features like:
-- Anxiety level
-- Sleep patterns
-- Academic performance
-- Social interactions
-- Counseling history
+## ▶️ How to Run
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/hr-analytics-dashboard.git
+   cd hr-analytics-dashboard
+   ```
 
-## 📊 Output
-- Accuracy score and classification report
-- Feature importance chart to understand the most influential factors
+2. Install dependencies:
+   ```bash
+   pip install pandas numpy
+   ```
 
-## 📂 How to Run
-1. Clone the repo
-2. Add your `student_responses.csv` dataset
-3. Run:
-```bash
-python mental_stress_risk_detection.py
-```
+3. Run the script:
+   ```bash
+   python hr_analytics_dashboard.py
+   ```
 
-## 📎 Dataset
-You can simulate or use a real anonymized dataset with features such as:
-- AnxietyScore, SleepHours, AcademicPressure, SocialSupport, CounselingBefore, AtRisk
+4. Open Power BI:
+   - Import `processed_hr_data.csv`
+   - Use the suggested visuals (KPI cards, bar charts, line plots, etc.)
 
-## 🙌 Outcome
-A list of predicted students at risk, along with insights to help educational institutions take proactive measures.
+## 📌 Suggested Power BI Visuals
+- **KPI Cards**: Avg Satisfaction, Attrition Rate, Avg Performance
+- **Bar Charts**: Performance vs Department, Attrition vs Tenure
+- **Line Graphs**: Engagement over time
+- **Scatter Plots**: Satisfaction vs Performance
+- **Slicers**: Department, Gender, Role
+
+---
+
+### 📬 Contact
+Feel free to connect if you want to collaborate or discuss analytics work.
